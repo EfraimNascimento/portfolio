@@ -382,7 +382,7 @@ header{
     margin-bottom: 2rem;
 }
 
-.card-info button{
+.btn{
     width: 8rem;
     height: 2.5rem;
     background: #EB5757; 
@@ -396,8 +396,109 @@ header{
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
 }
 
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+}
+
 .card:hover .card-info{
     bottom: 2rem;
     opacity: 1;
     visibility: visible;
+}
+
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper{
+    width: 60%;
+    height: 50rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0,0,0, .5);
+}
+
+.contato-left{
+    width: 35%;
+    background:linear-gradient(rgba(15,15,15, .6),rgba(22,22,22, 0.9)), url(imagens/contato.jpg);
+    background-size: cover;
+}
+
+.contato-rigth{
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.sessao-contato h1{
+    width: 100%;
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.sessao-contato form{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group{
+    position: relative;
+}
+
+.field{
+    background: transparent;
+    border: none;
+    width: 40rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0rem;
+}
+
+.input-group textarea{
+    padding-top: 1rem;
+    min-width: 8rem;
+    min-height: 5rem;
+    max-width: 40rem;
+    max-height: 10rem;
+}
+
+.field-label{
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-size: 1.2rem;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.field:focus ~ label{
+    top: 0;
+    font-size: 1rem;
+}
+
+.field:focus{
+    border-bottom: 1px solid;
+}
+
+.btn-submit{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    width: 100%;
+    height: 2rem;
+    margin-top: 10rem;
 }
