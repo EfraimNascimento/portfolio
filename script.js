@@ -1,6 +1,6 @@
 
 document.querySelector(".hamburguer").addEventListener("click", () => document.querySelector(".container").classList.toggle("show-menu"));
-
+document.querySelector(".hamburguer").addEventListener("click", () => document.querySelector(".container").classList.toggle("black-line"));
 
 document.querySelector("#qtde").addEventListener("change", updatePrice);
 document.querySelector("#js").addEventListener("change", updatePrice);
